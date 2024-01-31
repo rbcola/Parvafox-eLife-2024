@@ -35,7 +35,7 @@ colnames(Results)=c("Opsin","Test","t-value","df","p-value","Hedges-g","Genotype
 #read data
 myData=read.xlsx("D:/Reto (old harddrive)/UNIFR/MSc.EBR/Masterarbeit/HotPlate/22-12-21_Opto_HotPlate_allAnimals/22-09-07_Opto_HotPlate_1stLickAttempt_or_correctEP.xlsx")
 #only keep avg columns
-myData <- myData[,c(1,9,10)]
+#myData <- myData[,c(1,9,10)]
 
 #convert to long format
 longData=melt(myData, id.vars=("Animal"), variable.name = "Condition", value.name = "Value")
